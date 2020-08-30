@@ -1,0 +1,57 @@
+body {
+  background-color: $baseBackgroundColor;
+  min-width: 320px;
+  font-family: $baseFont;
+  font-size: $baseFontSize;
+  color: $baseFontColor;
+  margin: 0;
+}
+
+button,
+[type="reset"],
+[type="submit"],
+[type="image"],
+a {
+  color: $baseFontColor;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"] {
+  @include size(9.75rem, 1.875rem);
+  border: 1px solid $borderColor;
+  border-radius: 100px;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  color: $controlFontColor;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+%list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

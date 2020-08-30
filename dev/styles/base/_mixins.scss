@@ -1,0 +1,84 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $color;
+    -moz-box-shadow: inset $top $left $blur $color;
+    box-shadow: inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin font-face($fontName, $fileName) {
+  @font-face {
+    font-family: "#{$fontName}";
+    src: url("../fonts/#{$fileName}.woff") format("woff"),
+      url("../fonts/#{$fileName}.woff2") format("woff2"),
+      url("../fonts/#{$fileName}.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &.placeholder {
+    @content;
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
+}
+
+@mixin translate($x, $y) {
+  @include transform(translate($x, $y));
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin verticalCenter($x) {
+  position: absolute;
+  left: $x;
+  top: 50%;
+  @include translate(0, -50%);
+}
+@mixin horizontalCenter($y) {
+  position: absolute;
+  left: 50%;
+  top: $y;
+  @include translate(-50%, 0);
+}
+
+@mixin clearfix() {
+  content: "";
+  display: block;
+  clear: both;
+}
+@mixin grid-columns($args...) {
+  grid-template-columns: $args;
+}

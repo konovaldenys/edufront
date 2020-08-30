@@ -1,0 +1,25 @@
+.sidebar {
+  position: relative;
+  @include size(12.5rem, 100%);
+  min-width: 12.5rem;
+  padding-top: 8rem;
+  padding-bottom: 1.5rem;
+  background-color: $baseBackgroundColor;
+  z-index: 999;
+  margin-left: -12.5rem;
+  @include box-shadow(0px, 0px, 2px, #3c4b9b26);
+  @include transition(margin-left 0.5s ease);
+  &.active {
+    margin-left: 0;
+  }
+  .logo {
+    @include horizontalCenter(1.5rem);
+  }
+  @media only screen and (max-width: $tablet) {
+    position: absolute;
+    height: auto;
+    &.active{
+      margin-left: -12.5rem;
+    }
+  }
+}

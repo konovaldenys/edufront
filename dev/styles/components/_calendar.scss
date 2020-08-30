@@ -1,0 +1,201 @@
+.calendar {
+  overflow: hidden;
+  &-container {
+    display: grid;
+    grid-template-columns: 4.0625rem auto;
+  }
+  &-content {
+    width: 100%;
+    padding: 1rem 1.8125rem 0 1rem;
+    &_name {
+      color: $baseFontColor;
+      font-size: 0.875rem;
+      letter-spacing: 0.02625rem;
+      font-weight: normal;
+      display: block;
+      margin-bottom: 0.2rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 75%;
+      position: absolute;
+    }
+    &_quantity {
+      color: $baseFontColor;
+      font-size: 0.875rem;
+      letter-spacing: 0.02625rem;
+      font-weight: normal;
+      display: block;
+      text-align: center;
+    }
+    &_time {
+      display: block;
+      letter-spacing: 0.0225rem;
+      color: $controlFontColor;
+      font-size: 0.75rem;
+      padding-top: 1.25rem;
+      white-space: nowrap;
+      max-width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: absolute;
+    }
+    &_fotos {
+      position: absolute;
+      bottom: 0.375rem;
+      right: 0.375rem;
+      display: flex;
+    }
+    &_foto {
+      margin-left: 0.25rem;
+      border-radius: 6.25rem;
+      overflow: hidden;
+      background-color: $controlFontColor;
+      @include size(1.5rem);
+    }
+    &_list {
+      display: grid;
+      @include grid-columns(repeat(7, 1fr));
+      margin: 0 -0.25rem;
+      padding: 0;
+      list-style: none;
+    }
+    &_item {
+      padding: 0 0.25rem;
+      width: 100%;
+    }
+    &_block {
+      padding: 0.5rem 0 0 0.625rem;
+      @include size(100%, 58px);
+      background: rgba(105, 169, 242, 0.06);
+      border-radius: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 0.25rem;
+      &:after {
+        @include clearfix;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include size(0.25rem, 100%);
+        background-color: rgba(105, 169, 242, 1);
+      }
+    }
+    &_row-list {
+      display: flex;
+      margin: 0 -0.125rem;
+      padding: 0;
+      list-style: none;
+    }
+    &_row-item {
+      padding: 0 0.125rem;
+      width: 100%;
+    }
+  }
+  &-days {
+    border-top: 1px solid $borderColor;
+    border-bottom: 1px solid $borderColor;
+    padding-left: 5.0625rem;
+    padding-right: 1.8125rem;
+    &_list {
+      @extend %list-reset;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &_item {
+      display: flex;
+      align-items: center;
+      height: 1.5625rem;
+      width: 100%;
+      justify-content: center;
+    }
+    &_day {
+      display: block;
+      color: $baseFontColor;
+      font-size: 0.875rem;
+      letter-spacing: 0.02625rem;
+      font-weight: 600;
+    }
+    &_item {
+      &.active {
+        .calendar-days_day {
+          color: #f2b269;
+        }
+      }
+    }
+  }
+  &-time {
+    width: 4.0625rem;
+    min-width: 4.0625rem;
+    border-right: 1px solid $borderColor;
+    padding-top: 1rem;
+    &_list {
+      @extend %list-reset;
+    }
+    &_item {
+      height: 3.1rem;
+      padding-top: 0.25rem;
+      &.active {
+        padding-top: 0.4rem;
+        .calendar-time_time {
+          color: #f2b269;
+          font-weight: bold;
+          position: relative;
+          &:after {
+            @include clearfix;
+            position: absolute;
+            top: 0.0625rem;
+            right: -0.4375rem;
+            border-radius: 6.25rem;
+            @include size(0.875rem);
+            background-color: #f2b269;
+          }
+          &:before {
+            @include clearfix;
+            position: absolute;
+            top: 0.40625rem;
+            border-top: 1px dotted #f2b269;
+            opacity: 1;
+            right: -125rem;
+            width: 125rem;
+          }
+        }
+      }
+    }
+    &_time {
+      color: $controlFontColor;
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8125rem;
+      letter-spacing: 0.024375rem;
+    }
+  }
+  @media only screen and (max-width: $desktop) {
+    &-content {
+      &_foto {
+        display: none;
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet) {
+    overflow-x: scroll;
+    &-scroll {
+      width: 56.25rem;
+    }
+    &-time {
+      &_item {
+        &.active {
+          .calendar-time_time {
+            &:before {
+              right: auto;
+              left: 4rem;
+              width: 52.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

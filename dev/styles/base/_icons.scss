@@ -1,0 +1,55 @@
+.icon {
+  display: inline-block;
+  &.icon-home {
+    background: url(../img/home.svg) 0 0 no-repeat;
+    @include size(1.375rem);
+  }
+  &.icon-classes {
+    background: url(../img/classes.svg) 0 0 no-repeat;
+    @include size(1.375rem);
+  }
+  &.icon-calendar {
+    background: url(../img/calendar.svg) 0 0 no-repeat;
+    @include size(1.375rem);
+  }
+  &.icon-users {
+    background: url(../img/users.svg) 0 0 no-repeat;
+    @include size(1.375rem);
+  }
+  &.icon-assessment {
+    background: url(../img/users.svg) 0 0 no-repeat;
+    @include size(1.375rem);
+  }
+  &.icon-course {
+    background: url(../img/course.svg) 0 0 no-repeat;
+    @include size(1.375rem);
+  }
+  &.icon-my-files {
+    background: url(../img/my-files.svg) 0 0 no-repeat;
+    @include size(1.25rem, 1.125rem);
+  }
+  &.icon-results {
+    background: url(../img/results.svg) 0 0 no-repeat;
+    @include size(1.3125rem, 1.375rem);
+  }
+  &.icon-plus {
+    background: url(../img/plus.svg) 0 0 no-repeat;
+    @include size(0.625rem, 0.625rem);
+  }
+  &.icon-user {
+    background: url(../img/icon-user.svg) no-repeat;
+    @include size(1rem);
+  }
+  &.icon-search {
+    background: url(../img/search.svg) no-repeat;
+    @include size(1rem);
+  }
+  &.icon-prev {
+    @include size(1rem);
+    background: url(../img/prev.svg) no-repeat 50% 50%;
+  }
+  &.icon-next {
+    @include size(1rem);
+    background: url(../img/next.svg) no-repeat 50% 50%;
+  }
+}

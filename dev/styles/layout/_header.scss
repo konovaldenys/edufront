@@ -1,0 +1,19 @@
+.header {
+  border-bottom: 1px solid $borderColor;
+  padding-top: 1rem;
+  .btn-hamburger {
+    margin-right: 1.25rem;
+  }
+  &_title {
+    font-family: $quickSandRegularFont;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .row-grid{
+    @include grid-columns(2.75rem auto auto);
+    @media only screen and (max-width: $desktop) {
+      @include grid-columns(2.75rem auto);
+    }
+  }
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html lang="en" class="no-js ie9"><![endif]-->
+<!--[if (gte IE 9) | !(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>edufront</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar active">
+        <h1 class="logo"><a href="#">edufront</a></h1>
+        <nav class="main-nav">
+          <ul class="main-nav_list">
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-home"></i> Home</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-classes"></i> Classes</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-calendar"></i> Calendar</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-users"></i> Users</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-assessment"></i> Assessment</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-course"></i> Course</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-my-files"></i> My Files</a
+              >
+            </li>
+            <li class="main-nav_item">
+              <a class="main-nav_link" href="#"
+                ><i class="icon icon-results"></i> Results</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main">
+        <header class="header">
+          <div class="container">
+            <div class="row-grid align-items-center">
+              <button class="btn-hamburger"></button>
+              <div class="column">
+                <div class="header_title">Calendar</div>
+                <nav class="nav">
+                  <ul class="nav_list">
+                    <li class="nav_item active">
+                      <a href="#" class="nav_link">Calendar & Timetable</a>
+                    </li>
+                    <li class="nav_item">
+                      <a href="#" class="nav_link">Timetable Planner</a>
+                    </li>
+                    <li class="nav_item">
+                      <a href="#" class="nav_link">Timetable Structure</a>
+                    </li>
+                    <li class="nav_item">
+                      <a href="#" class="nav_link">Timetable Structure</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="column align-block-right">
+                <input class="search" type="search" placeholder="Search" />
+                <button class="btn-add"><i class="icon icon-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="top-panel">
+          <div class="container">
+            <div class="row-flex align-items-center justify-content-between">
+              <div class="top-panel_left">
+                <button class="btn-add"><i class="icon icon-plus"></i></button>
+                <h2 class="top-panel_title">Mon, 27 September</h2>
+                <div class="button-container days">
+                  <a href="#"><i class="icon icon-prev"></i></a>
+                  <span>Today</span>
+                  <a href="#"><i class="icon icon-next"></i></a>
+                </div>
+                <div class="button-container weeks">
+                  <a href="#">D</a>
+                  <a class="active" href="#">Week</a>
+                  <a href="#">M</a>
+                </div>
+                <div class="button-container"></div>
+              </div>
+              <div class="top-panel_center">
+                <a href="#" class="btn-round active"
+                  ><i class="icon icon-user"></i
+                ></a>
+                <a href="#" class="btn-round"></a>
+                <a href="#" class="btn-round"
+                  ><i class="icon icon-search"></i
+                ></a>
+              </div>
+              <div class="top-panel_right">
+                <a href="#" class="button-container btn-filter">
+                  <span>Filter</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calendar">
+          <div class="calendar-scroll">
+            <div class="calendar-days">
+              <ul class="calendar-days_list">
+                <li class="calendar-days_item">
+                  <span class="calendar-days_day">27 Mon</span>
+                </li>
+                <li class="calendar-days_item">
+                  <span class="calendar-days_day">28 Tue</span>
+                </li>
+                <li class="calendar-days_item">
+                  <span class="calendar-days_day">29 Wed</span>
+                </li>
+                <li class="calendar-days_item active">
+                  <span class="calendar-days_day">1 Thu</span>
+                </li>
+                <li class="calendar-days_item">
+                  <span class="calendar-days_day">2 Fri</span>
+                </li>
+                <li class="calendar-days_item">
+                  <span class="calendar-days_day">3 Sat</span>
+                </li>
+                <li class="calendar-days_item">
+                  <span class="calendar-days_day">4 Sun</span>
+                </li>
+              </ul>
+            </div>
+            <div class="calendar-container">
+              <div class="calendar-time">
+                <ul class="calendar-time_list">
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">6:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">7:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">8:00</span>
+                  </li>
+                  <li class="calendar-time_item active">
+                    <span class="calendar-time_time">9:15</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">10:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">11:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">12:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">13:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">14:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">15:00</span>
+                  </li>
+                  <li class="calendar-time_item">
+                    <span class="calendar-time_time">16:00</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="calendar-content">
+                <ul class="calendar-content_list">
+                  <li class="calendar-content_item">
+                    <div class="calendar-content_block">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div class="calendar-content_row">
+                      <ul class="calendar-content_row-list">
+                        <li class="calendar-content_row-item">
+                          <div
+                                  class="calendar-content_block"
+                                  style="height: 94px"
+                          >
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                        <li class="calendar-content_row-item">
+                          <div class="calendar-content_block" style="top: 17px">
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                        <li class="calendar-content_row-item">
+                          <div class="calendar-content_block" style="top: 53px">
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="calendar-content_block" style="top: 90px">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div class="calendar-content_row">
+                      <ul class="calendar-content_row-list">
+                        <li class="calendar-content_row-item">
+                          <div
+                                  class="calendar-content_block"
+                                  style="height: 94px; top: 90px"
+                          >
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                        <li class="calendar-content_row-item">
+                          <div class="calendar-content_block" style="top: 90px">
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                        <li class="calendar-content_row-item">
+                          <div
+                                  class="calendar-content_block"
+                                  style="top: 90px; padding: 1.25rem 0 0 0"
+                          >
+                            <strong class="calendar-content_quantity" >+3</strong>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="calendar-content_item">
+                    <div
+                            class="calendar-content_block"
+                            style="height: 110px; top: 62px"
+                    >
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar-content_item">
+                    <div class="calendar-content_block">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div class="calendar-content_block" style="top: 95px">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar-content_item">
+                    <div class="calendar-content_block">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div class="calendar-content_block" style="height: 270px">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div
+                              class="calendar-content_fotos"
+                              style="bottom: auto; top: 5.4rem"
+                      >
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div class="calendar-content_row">
+                      <ul class="calendar-content_row-list">
+                        <li class="calendar-content_row-item">
+                          <div class="calendar-content_block">
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                        <li class="calendar-content_row-item">
+                          <div class="calendar-content_block">
+                            <strong class="calendar-content_name">Event Name</strong>
+                            <span class="calendar-content_time">6 am</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="calendar-content_item">
+                    <div class="calendar-content_block">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar-content_item">
+                    <div class="calendar-content_block">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div
+                            class="calendar-content_block"
+                            style="height: 110px; top: 168px"
+                    >
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="calendar-content_item">
+                    <div class="calendar-content_block">
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                    <div
+                            class="calendar-content_block"
+                            style="height: 110px; top: 20px"
+                    >
+                      <strong class="calendar-content_name">Event Name</strong>
+                      <span class="calendar-content_time">6 am</span>
+                      <div class="calendar-content_fotos">
+                        <div class="calendar-content_foto"></div>
+                        <div class="calendar-content_foto"></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
